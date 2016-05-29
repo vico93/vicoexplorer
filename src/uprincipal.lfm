@@ -1,8 +1,69 @@
 object Form1: TForm1
-  Left = 238
-  Height = 240
-  Top = 147
-  Width = 320
+  Left = 299
+  Height = 381
+  Top = 116
+  Width = 578
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
   Caption = 'Form1'
+  ClientHeight = 381
+  ClientWidth = 578
   LCLVersion = '1.6.0.4'
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 358
+    Width = 578
+    Panels = <>
+  end
+  object Toolbar: TPanel
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 578
+    Align = alTop
+    ClientHeight = 40
+    ClientWidth = 578
+    TabOrder = 1
+    object btVoltar: TButton
+      Left = 8
+      Height = 23
+      Top = 8
+      Width = 32
+      Caption = '↩️'
+      TabOrder = 0
+    end
+    object btAvancar: TButton
+      Left = 40
+      Height = 23
+      Top = 8
+      Width = 32
+      Caption = '↪️'
+      TabOrder = 1
+    end
+    object btParar: TButton
+      Left = 504
+      Height = 23
+      Top = 8
+      Width = 32
+      Caption = '✖️'
+      TabOrder = 2
+    end
+    object btAtualizar: TButton
+      Left = 536
+      Height = 23
+      Top = 8
+      Width = 32
+      Caption = '🔄'
+      TabOrder = 3
+    end
+    object Edit1: TEdit
+      Left = 80
+      Height = 23
+      Top = 8
+      Width = 416
+      TabOrder = 4
+      Text = 'Edit1'
+    end
+  end
 end
