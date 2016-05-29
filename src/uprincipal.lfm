@@ -8,6 +8,7 @@ object Form1: TForm1
   Caption = 'Form1'
   ClientHeight = 381
   ClientWidth = 578
+  OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object StatusBar: TStatusBar
     Left = 0
@@ -57,13 +58,23 @@ object Form1: TForm1
       Caption = '🔄'
       TabOrder = 3
     end
-    object Edit1: TEdit
+    object edtURL: TEdit
       Left = 80
       Height = 23
       Top = 8
       Width = 416
+      OnClick = edtURLClick
       TabOrder = 4
-      Text = 'Edit1'
+      Text = 'edtURL'
     end
+  end
+  object Chromium1: TChromium
+    Left = 0
+    Height = 318
+    Top = 40
+    Width = 578
+    Align = alClient
+    DefaultUrl = 'about:blank'
+    AcceptLanguageList = 'pt-BR'
   end
 end
