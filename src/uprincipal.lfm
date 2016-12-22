@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 299
+  Left = 234
   Height = 381
-  Top = 116
+  Top = 122
   Width = 578
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -9,7 +9,7 @@ object Form1: TForm1
   ClientHeight = 381
   ClientWidth = 578
   OnCreate = FormCreate
-  LCLVersion = '1.6.0.4'
+  LCLVersion = '1.6.2.0'
   object StatusBar: TStatusBar
     Left = 0
     Height = 23
@@ -56,6 +56,7 @@ object Form1: TForm1
       Top = 8
       Width = 32
       Caption = '🔄'
+      OnClick = btAtualizarClick
       TabOrder = 3
     end
     object edtURL: TEdit
